@@ -1,0 +1,2 @@
+Lists and Dictionaries are mutable data structures. i.e, even after they have been created, you can modify them, add to them, remove elements from them.
+Strings and Tuples are not mutable. You can easily create new modified Strings and Tuples but you cannot modify the original ones in place.
