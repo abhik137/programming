@@ -1,0 +1,20 @@
+# scope and storage classes in C
+
+References:
+-http://aelinik.free.fr/c/ch14.htm
+-http://www.clear.rice.edu/elec201/ictutorial/tut2-4.html
+-https://en.wikipedia.org/wiki/Global_variable#C_and_C.2B.2B
+	-http://stackoverflow.com/questions/1433204/what-are-extern-variables-in-c?rq=1
+	-http://stackoverflow.com/questions/683180/is-this-extern-harmless
+	-http://stackoverflow.com/questions/1410563/what-is-the-difference-between-a-definition-and-a-declaration
+	-http://stackoverflow.com/questions/5195669/organisation-of-data-on-the-stack-in-c?lq=1
+	-http://en.wikipedia.org/wiki/File%3aCall_stack_layout.svg
+	-http://en.wikipedia.org/wiki/Scope_(computer_science)#C
+	-http://icecube.wisc.edu/~dglo/c_class/scope.html
+	-http://publib.boulder.ibm.com/infocenter/lnxpcomp/v8v101/index.jsp?topic=%2Fcom.ibm.xlcpp8l.doc%2Flanguage%2Fref%2Fzexscope_c.htm
+
+# File Handling
+
+# C preprocessor
+
+# String manipulation
