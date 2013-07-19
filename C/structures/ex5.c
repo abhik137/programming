@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-struct{							//Tag name is not required here as we have defined b1, b2 as type-name
+struct{							//Tag name is not required here as we have defined the required variables b1, b2 in advance
 			char name[30];
 			float price;
 			int pages;
