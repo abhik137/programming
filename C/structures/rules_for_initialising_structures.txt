@@ -1,0 +1,11 @@
+// It is not possible to initialize individual members 'inside' the structure template
+
+// The order of values enclosed in braces must match the order of members in the structure definition
+
+//It  is  permitted  to  have  a  partial  initialization.  We  can 
+	initialize  only  the  first  few  members  and  leave  the 
+	remaining  blank.  The  uninitialized  members  should  be 
+	only at the end of the list
+//The  uninitialized  members  will  be  assigned  default 
+	values:  Zero  for  integer  and  floating  point  numbers  and 
+	‘\0’ for character and strings
