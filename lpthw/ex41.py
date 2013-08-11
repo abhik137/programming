@@ -8,7 +8,7 @@ WORDS = []
 PHRASES = {
     "class ###(###):":
         "Make a class named ### "
-    "class ###(object):\n\tdef __init__(self, ***)" :
+    "class ###(object):\n\tdef __init__(self, ***)":
         "class ### "
     "class ###(object):\n\tdef ***(self, @@@)":
         "class ### "

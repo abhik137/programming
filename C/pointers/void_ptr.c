@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
 	char c='d';
 	float f=10.1;
 	p1=&x;
-	printf("%p\n", p1);		// '%p' is placeholder for pointers
+	printf("%p\n", p1);		// '%p 'is placeholder for pointers
 	p1=&c;
 	printf("%p\n", p1);
 	p1=&f;
