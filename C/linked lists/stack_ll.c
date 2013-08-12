@@ -13,7 +13,7 @@ struct Node
 	struct Node *next;
 };
 
-typedef struct Node	*node;
+typedef struct Node* node;
 
 node topp = NULL;
 
@@ -72,18 +72,19 @@ void push(int v)
 
 void pop()
 {
-	node temp, var;
+	node to_freep;
 	int pv;
-	var = topp;
+	to_freep = topp;
 	if (topp == NULL)
 	{
 		printf("Empty Stack\n");
 	}
 	else
 	{
-		pv = topp->data;
+		pv = to_freep->data;
 		printf("Popped Value is: %d\n", pv);
-		topp = topp->next;	
+		topp = to_freep->next;
+		free(to_freep);
 	}
 	printf("\n");
 }
