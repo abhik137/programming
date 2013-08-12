@@ -13,10 +13,10 @@
 struct node
 {
 	int d;
-	struct node *next;
+	struct node* next;
 };
 
-typedef struct node *NODE;	// ptr(type) to struct 
+typedef struct node* NODE;	// ptr(type) to struct 
 
 NODE head = NULL;	// Global scope(verify!)
 
@@ -63,7 +63,8 @@ void insert()
 	printf("Enter Value: \n");
 	scanf("%d", &v);
 // Create new node
-	new = (NODE)malloc(sizeof(struct node));
+//	new = (NODE)malloc(sizeof(struct node));	// malloc returns a void pointer
+	new = malloc(sizeof(NODE));		// casting malloc() is risky and unnecessary | ref: http://cboard.cprogramming.com/faq-board/25799-faq-casting-malloc.html | http://stackoverflow.com/questions/605845/do-i-cast-the-result-of-malloc
 //Store the value for the node
 	new -> d = v;
 	new -> next = NULL;
@@ -75,7 +76,7 @@ void insert()
 	}
 	else
 	{
-		temp = head;
+		temp = head;		// so that the head remains where it is
 
 		while (temp->next != NULL)
 		{
@@ -143,7 +144,7 @@ void search()
 	}
 }
 
-void delete()
+void delete()	// this code can be improved
 {
 	int e;
 	NODE temp, t;
