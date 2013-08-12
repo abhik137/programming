@@ -2,7 +2,7 @@
 
 def Palindrome(s):
     if s == s[::-1]:                    # slicing [begin:end:step] used to reverse a string here
-        return True
+        return True                     # begin&end => actual pos in the array
     else:
         return False
 
@@ -19,4 +19,7 @@ print greatest
 '''
 references:
     http://docs.python.org/2/library/functions.html#xrange
+    http://stackoverflow.com/questions/931092/reverse-a-string-in-python
+    http://docs.python.org/release/2.3.5/whatsnew/section-slices.html
+    http://stackoverflow.com/questions/509211/the-python-slice-notation
 '''
