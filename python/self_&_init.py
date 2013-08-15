@@ -23,3 +23,7 @@ Python creates an object for you, and passes it as the first parameter to the __
 Any additional parameters (e.g., A(24, 'Hello')) will also get passed as arguments--in this
 case causing an exception to be raised, since the constructor isn't expecting them.
 """
+
+# ref 1: http://stackoverflow.com/questions/625083/python-init-and-self-what-do-they-do
+# ref 2: http://stackoverflow.com/questions/2709821/python-self-explained
+# ref 3: http://stackoverflow.com/questions/6019627/python-self-keyword
