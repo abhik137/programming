@@ -7,6 +7,11 @@ class A(object):
     def method_a(self, foo):
         print self.x + ' ' + foo
 
+
+cl = A()        # so basically, constructors are default/fallback objects for a class?
+print cl.x      # This would print 'Hello'
+
+
 """
 ... the self variable represents the instance of the object itself. Most object-oriented
 languages pass this as a hidden parameter to the methods defined on an object; 
@@ -23,6 +28,8 @@ Python creates an object for you, and passes it as the first parameter to the __
 Any additional parameters (e.g., A(24, 'Hello')) will also get passed as arguments--in this
 case causing an exception to be raised, since the constructor isn't expecting them.
 """
+# My $0.02: self defines the behavior of class when no params.(?) are passed to it during instantiation
+# Q : Is self an object?
 
 # ref 1: http://stackoverflow.com/questions/625083/python-init-and-self-what-do-they-do
 # ref 2: http://stackoverflow.com/questions/2709821/python-self-explained
