@@ -1,0 +1,13 @@
+Pointers in depth:
+
+https://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work
+
+http://denniskubes.com/2013/03/22/basics-of-function-pointers-in-c/		[More on C in this blog]
+
+https://stackoverflow.com/questions/537244/constructor-in-c
+
+https://blogs.oracle.com/ksplice/entry/the_ksplice_pointer_challenge
+
+http://savannah.nongnu.org/projects/pgubook/	[book]
+
+http://stackoverflow.com/a/897414/541412	[C's memory model ?]
