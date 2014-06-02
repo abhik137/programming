@@ -1,8 +1,8 @@
 # problem 3: Largest Prime Factor
 
-b=600851475143
-n = 71
-a=317584931803
+n = 600851475143
+#n = 71
+#a=317584931803
 i=3
 while i*i<n:            # note that 'n' is changing here
     while n % i == 0:
