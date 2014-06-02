@@ -1,7 +1,7 @@
 
 class A(object):
     """docstring for ClassName"""
-    def __init__(self):
+    def __init__(self):		# init method is basically a constructor, which is called when an instance of 'A' gets invoked
         self.x = 'Hello'
 
     def method_a(self, foo):
@@ -28,7 +28,7 @@ Python creates an object for you, and passes it as the first parameter to the __
 Any additional parameters (e.g., A(24, 'Hello')) will also get passed as arguments--in this
 case causing an exception to be raised, since the constructor isn't expecting them.
 """
-# My $0.02: self defines the behavior of class when no params.(?) are passed to it during instantiation
+# [to_verify]My $0.02: self defines the behavior of class when no params.(?) are passed to it during instantiation
 # Q : Is self an object?
 
 # ref 1: http://stackoverflow.com/questions/625083/python-init-and-self-what-do-they-do
