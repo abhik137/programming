@@ -1,5 +1,5 @@
 # ref: http://stackoverflow.com/questions/576169/understanding-python-super-and-init-methods
-# ref: http://stackoverflow.com/questions/222877/how-to-use-super-in-python?rq=1
+# ref: http://stackoverflow.com/questions/222877/how-to-use-super-in-python
 
 class Base(object):
     def __init__(self):
