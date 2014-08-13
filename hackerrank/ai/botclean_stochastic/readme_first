@@ -1,0 +1,4 @@
+the same code works for 
+	botclean
+	botclean stochastic
+since the original code itself can handle stochastic cases[infact, the stochastic case is easier since there is only one target cell and the shortest path to that is obvious]
