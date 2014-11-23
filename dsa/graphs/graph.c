@@ -1,13 +1,13 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
 /*
  * Adjacency-List graph DS
  * Edges are represented using an array of linked-lists
  * We keep a count of no. of vertices for each graph
  * and assign each vertex a unique id from 1->nvertices
  */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #define MAXV 1000	/* max. no. of vertices */
 typedef enum { false, true } bool;
@@ -26,16 +26,22 @@ typedef struct graph {
 	bool directed;
 }graph;
 
+void initialize_graph(graph *g, bool directed);
+void read_graph(graph *g, bool directed);
+void insert_edge(graph *g, int x, int y, bool directed);
+void print_graph(graph *g);
+
 int main()
 {
 	graph *g;
+	g = (struct graph *)malloc(sizeof(struct graph));
 	bool directed = true;
 	read_graph(g, directed);
 	print_graph(g);
 	return 0;
 }
 
-initialize_graph(graph *g, bool directed)
+void initialize_graph(graph *g, bool directed)
 {
 	int i;	/* counter */
 
@@ -49,7 +55,7 @@ initialize_graph(graph *g, bool directed)
 		g->edges[i] = NULL;
 }
 
-read_graph(graph *g, bool directed)
+void read_graph(graph *g, bool directed)
 {
 	int i;		/* counter */
 	int m;		/* number of edges */
@@ -59,13 +65,13 @@ read_graph(graph *g, bool directed)
 
 	scanf("%d %d", &(g->nvertices), &m);
 
-	for (i = 1; i < m; i++) {
+	for (i = 0; i < m; i++) {
 		scanf("%d %d", &x, &y);
 		insert_edge(g,x,y,directed);
 	}
 }
 
-insert_edge(graph *g, int x, int y, bool directed)
+void insert_edge(graph *g, int x, int y, bool directed)
 {
 	edgenode *p;	/* temp. pointer */
 
@@ -86,7 +92,7 @@ insert_edge(graph *g, int x, int y, bool directed)
 		g -> nedges++;
 }
 
-print_graph(graph *g)
+void print_graph(graph *g)
 {
 	int i;		/* counter */
 	edgenode *p;/* temp pointer */
