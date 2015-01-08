@@ -22,3 +22,5 @@ for x in xrange(t):
         s[target_i+1: len(s)] = sorted(s[target_i+1: len(s)])
         s = "".join(s)
         print s
+
+#ref: https://stackoverflow.com/questions/2272819/python-sort-a-part-of-a-list-in-place        
